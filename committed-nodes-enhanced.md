@@ -43,7 +43,7 @@ Before creating a committed notebook, ensure you have:
 
 #### Step 1: Access TIR AI Platform Dashboard
 
-![TIR AI Platform Dashboard](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/dashboard-access.png)
+![Committed Notebook Creation](https://docs.e2enetworks.com/assets/images/createcommittednotebook-3706a69f656a7c7bfd43192abe170aed.png)
 
 **Screenshot Analysis:**
 - **Top Navigation:** "TIR AI Platform" tab is highlighted in blue
@@ -92,7 +92,7 @@ Dashboard → TIR AI Platform → Notebooks
 
 #### Step 3: Choose Creation Method
 
-![Notebook Creation Options](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/creation-options.png)
+![Committed Notebook Creation Step 2](https://docs.e2enetworks.com/assets/images/createcomminote2-2a71db626b397579d5295e23393bcea9.png)
 
 **Screenshot Analysis:**
 - **Two Main Options:** "New Notebook" and "Import Notebook" presented as selectable cards
@@ -132,7 +132,7 @@ Dashboard → TIR AI Platform → Notebooks
 
 #### Step 5: Configure Instance Specifications
 
-![Instance Configuration Screen](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/instance-config.png)
+![Committed Plan Selection](https://docs.e2enetworks.com/assets/images/committedplan3-2c6054d823f81dd2b6a17c03eaef28fa.png)
 
 **Screenshot Analysis:**
 - **Resource Sliders:** Interactive controls for CPU cores, RAM, and storage allocation
@@ -170,7 +170,7 @@ Dashboard → TIR AI Platform → Notebooks
 
 #### Step 6: Select Commitment Plan
 
-![Commitment Plan Selection](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/commitment-plans.png)
+![Committed Plan Selection Interface](https://docs.e2enetworks.com/assets/images/committedplan3-2c6054d823f81dd2b6a17c03eaef28fa.png)
 
 **Screenshot Analysis:**
 - **Plan Cards:** Three distinct pricing tiers with prominent discount percentages
@@ -437,7 +437,7 @@ Modify your notebook specifications, commitment plans, or billing models during 
 
 Converting hourly notebooks to committed plans provides immediate cost savings while maintaining full functionality and data integrity.
 
-![Hourly to Committed Conversion Interface](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/hourly-to-committed.png)
+*[Interface Screenshot: Hourly to Committed Conversion showing current usage analysis and plan options]*
 
 **Screenshot Analysis:**
 - **Current Status Panel:** Displays existing hourly notebook details including current usage patterns
@@ -493,7 +493,7 @@ The system analyzes your usage patterns to recommend optimal commitment periods:
 
 Modify existing committed plans to adapt to changing project requirements while maintaining cost efficiency.
 
-![Plan Modification Interface](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/plan-change.png)
+*[Interface Screenshot: Plan modification dashboard with upgrade/downgrade options]*
 
 **Screenshot Analysis:**
 - **Current Plan Display:** Shows active commitment details including remaining time and current specifications
@@ -587,7 +587,7 @@ Before proceeding with deletion, ensure comprehensive data backup:
 
 ### Deletion Procedure
 
-![Deletion Confirmation Dialog](https://docs.e2enetworks.com/docs/tir/Nodes/Committed_Nodes/assets/deletion-confirmation.png)
+*[Interface Screenshot: Deletion confirmation dialog with warnings and verification steps]*
 
 **Screenshot Analysis:**
 - **Multi-Step Warning Dialog:** Multiple confirmation steps designed to prevent accidental deletion
