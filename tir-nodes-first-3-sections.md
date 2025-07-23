@@ -102,3 +102,179 @@ FramePack images provide comprehensive multi-framework environments designed for
 - Automated dependency management to prevent version conflicts
 
 FramePack environments eliminate the complexity of managing multiple framework installations while providing enterprise-grade performance optimization for production AI development workflows.
+
+---
+
+## Node Options
+
+TIR Nodes offer extensive configuration options to customize your development environment according to specific requirements and use cases.
+
+### Enable SSH
+
+SSH access provides complete command-line control over your development environment with enterprise-grade security features.
+
+**SSH Configuration Benefits**:
+- **Secure Authentication**: RSA and Ed25519 key support with encrypted key storage
+- **Flexible Access**: Configurable SSH port settings and IP filtering capabilities
+- **Multi-user Support**: Team-based SSH access with individual authentication credentials
+- **Advanced Security**: Network access restrictions and comprehensive audit logging
+
+SSH enables advanced system administration tasks, custom software installation, and seamless integration with external development tools and CI/CD pipelines. This is particularly valuable for teams requiring full system access or organizations with specific security requirements.
+
+### Disk Size
+
+![Storage Configuration Interface](https://docs.e2enetworks.com/assets/images/node_create_node_storage-078d77740cb90960b457a6b3581d607c.png)
+
+The storage configuration interface provides comprehensive options for managing node storage requirements. This interface displays various storage tiers, capacity options, and performance characteristics available for TIR Nodes.
+
+**Available Storage Options**:
+- **30GB Free Workspace**: Automatically included with every node at no additional cost for immediate development needs
+- **Standard Persistent Storage**: Scalable up to 5,000GB with complete data persistence across node lifecycle
+- **High-Performance SSD**: Enhanced read/write speeds for frequently accessed datasets and active development work
+- **Network Storage**: Shared storage capabilities enabling seamless collaboration across team members
+
+The interface clearly displays pricing information for different storage configurations, enabling users to optimize costs based on their specific data access patterns and performance requirements. Storage selection should consider factors like dataset size, access frequency, and collaborative requirements.
+
+### Local NVME Storage
+
+High-speed local NVME storage delivers exceptional performance for data-intensive operations requiring maximum throughput and minimal latency.
+
+**Performance Advantages**:
+- **Ultra-fast Operations**: Exceptional read/write speeds for large dataset processing and model training
+- **Minimal Latency**: Optimal for real-time inference applications and interactive development
+- **High Throughput**: Perfect for model checkpoints, training state management, and temporary processing
+- **Cache Optimization**: Ideal for frequently accessed data requiring immediate availability
+
+**Critical Consideration**: Local NVME storage is ephemeral and will be permanently lost during node recreation or termination. This makes it suitable exclusively for temporary, high-performance operations rather than long-term data storage.
+
+### Plan (Pricing)
+
+TIR Nodes support flexible billing models designed to optimize costs across different usage patterns and organizational requirements.
+
+**Hourly Billing Model**:
+- **Pay-per-use Structure**: Billing begins immediately when nodes become active and stops when nodes are terminated
+- **Cost Optimization**: Automatic savings when nodes are stopped during idle periods
+- **Development Friendly**: Perfect for experimentation, testing, and variable development workloads
+- **No Commitments**: Complete flexibility without long-term contracts or minimum usage requirements
+
+**Committed Plan Benefits**:
+- **Substantial Discounts**: Significant cost reductions for predictable, long-term usage patterns
+- **Resource Guarantee**: Fixed monthly pricing with guaranteed resource availability during peak demand
+- **Budget Predictability**: Stable costs enabling accurate financial planning and budget allocation
+- **Production Optimization**: Ideal for continuous training operations, production workloads, and enterprise deployments
+
+---
+
+## Node Status
+
+TIR Nodes operate through distinct status states that reflect their current operational condition and resource allocation status. Understanding these states is crucial for effective resource management and troubleshooting.
+
+**Waiting**: Node is queued for available resources in the selected geographic region. This status typically occurs during high-demand periods or when requesting specialized hardware configurations that may have limited availability. The waiting period ensures optimal resource allocation and fair distribution across users.
+
+**Running**: Node is fully operational and accessible for all development activities. All requested compute resources are allocated, services are active and responsive, and billing charges are in effect. Users can access both Jupyter interfaces and SSH connections with full functionality.
+
+**Stopped**: Node is gracefully shut down with all configurations and data preserved intact. Persistent storage maintains complete data integrity, billing charges are immediately paused, and the node can be quickly restarted without any data loss or configuration changes.
+
+**Pending**: Node is actively transitioning between operational states - either starting up from stopped condition, shutting down from running state, or applying configuration changes. This temporary status indicates ongoing system operations and typically resolves within minutes.
+
+**Expired**: Node has reached its maximum configured runtime limit, encountered a critical system error, or requires manual user intervention to resolve operational issues. This status demands immediate user attention and may indicate resource constraints, configuration problems, or system maintenance requirements.
+
+Understanding these status states enables effective resource utilization optimization, proactive troubleshooting of operational issues, and strategic cost management across development projects.
+
+---
+
+## How to Create Node?
+
+The comprehensive node creation process guides users through detailed configuration while maintaining operational simplicity for rapid deployment of AI development environments.
+
+### Step 1: Initiate Node Creation
+
+![Create Node Interface](https://docs.e2enetworks.com/assets/images/click_create_node-5cdfde38a5974bab42107967b1db8214.png)
+
+The TIR dashboard presents a clean, professional interface with the "Create Node" button strategically positioned for immediate access. This centralized design ensures that creating new development environments is always accessible within one click from the main dashboard.
+
+Click the prominently displayed "Create Node" button to launch the comprehensive configuration wizard that will guide you through selecting optimal settings for your specific AI development requirements.
+
+### Step 2: Container Registry Integration
+
+![Container Registry Configuration](https://docs.e2enetworks.com/assets/images/node_create_container_reg-7187dc5671d9cda2c7bbf059aa6e7fce.png)
+
+The container registry configuration interface enables seamless integration with external container repositories for organizations using custom container images. This interface provides secure authentication management and version control capabilities.
+
+**Registry Integration Features**:
+- **Docker Hub Integration**: Direct access to public Docker Hub repositories with automated image pulling
+- **Private Registry Support**: Secure connections to organizational container registries with encrypted authentication
+- **Authentication Management**: Secure credential storage and automated authentication handling
+- **Version Control**: Specific image tag selection ensuring reproducible deployments across team members
+
+For development teams utilizing custom container images, this integration provides seamless access to organizational repositories while maintaining enterprise security standards and deployment consistency.
+
+### Step 3: Advanced Hardware Filtering
+
+![Hardware Filter Interface](https://docs.e2enetworks.com/assets/images/node_create_CPU_filter-aa71d9fe294d2dbf7cd6a3c100c2f7e4.png)
+
+The advanced filtering system enables precise specification of hardware requirements through multiple comprehensive criteria. This interface allows users to narrow down available options based on technical specifications and budget constraints.
+
+**Filtering Capabilities**:
+- **CPU Architecture**: Filter by Intel or AMD processor families with specific performance characteristics
+- **Memory Requirements**: Set minimum and maximum memory thresholds based on workload demands
+- **GPU Specifications**: Define GPU memory requirements and performance levels for AI/ML workloads
+- **Budget Constraints**: Apply price range filters to identify cost-effective configurations
+- **Geographic Preferences**: Select preferred availability zones for optimal network performance
+
+This granular filtering capability accelerates the selection process by quickly identifying configurations that meet both technical requirements and budgetary constraints.
+
+### Step 4: Startup Script Configuration
+
+![Script Configuration Interface](https://docs.e2enetworks.com/assets/images/nodescript01-d505d96b46b19d431e6cf08608444f5f.png)
+
+The comprehensive script configuration interface provides advanced automation capabilities for environment setup and service initialization. This feature enables complete customization of the development environment during node creation.
+
+**Automation Capabilities**:
+- **Environment Preparation**: Automated installation of packages, libraries, and development dependencies
+- **Data Pipeline Setup**: Scripted download and preprocessing of datasets, models, and research materials
+- **Service Configuration**: Automatic startup of required background services and development applications
+- **Custom Initialization**: Implementation of organization-specific configurations, security policies, and development standards
+
+**Example Automation Script**:
+```bash
+#!/bin/bash
+# Install additional Python packages for AI development
+pip install transformers datasets accelerate wandb optuna
+
+# Download and configure pre-trained models
+huggingface-cli download microsoft/DialoGPT-medium
+huggingface-cli download sentence-transformers/all-MiniLM-L6-v2
+
+# Configure environment variables for optimization
+export TRANSFORMERS_CACHE=/data/model_cache
+export WANDB_PROJECT=tir-ai-development
+export CUDA_VISIBLE_DEVICES=0
+
+# Initialize Jupyter with custom extensions and configuration
+jupyter lab --generate-config
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
+
+# Start services with optimized configurations
+jupyter lab --ip=0.0.0.0 --allow-root --no-browser --port=8888
+```
+
+Scripts execute automatically during node initialization, creating fully configured, immediately usable development environments without any manual intervention required.
+
+### Step 5: Configuration Summary and Deployment
+
+![Configuration Summary Interface](https://docs.e2enetworks.com/assets/images/node_create_summary_page-1797d59a189b44f565d84063ed62c368.png)
+
+The comprehensive summary interface displays complete configuration details for final review before node deployment. This detailed overview serves both as a verification checkpoint and as documentation for future reference.
+
+**Summary Information Components**:
+- **Image Configuration**: Selected base image with version details and optimization specifications
+- **Hardware Allocation**: Complete CPU, GPU, and memory specifications with performance expectations
+- **Storage Configuration**: Persistent and local storage allocations with capacity and performance details
+- **Network Setup**: Access configurations, security group settings, and connectivity specifications
+- **Cost Analysis**: Detailed pricing breakdown with hourly and monthly estimates for budget planning
+- **Automation Scripts**: Summary of configured startup scripts and initialization procedures
+
+**Deployment Process**: Upon final confirmation, the node creation process initiates with automated resource provisioning, base image deployment, and script execution. The complete deployment process typically requires 3-5 minutes depending on image complexity, script requirements, and current system load.
+
+This final review stage ensures configuration accuracy, provides cost transparency, and creates comprehensive documentation for team reference and organizational compliance requirements.
