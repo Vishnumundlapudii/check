@@ -180,6 +180,22 @@ Take time to review each section carefully—this summary becomes your blueprint
 
 ---
 
+## Node Status Management
+
+### Understanding Node States
+
+TIR Nodes operate through distinct status states that reflect their current operational condition and availability:
+
+**Running**: Node is fully operational and accessible for development work. All resources are allocated and services are active.
+
+**Stopped**: Node is gracefully shut down with all configurations preserved. Storage remains intact and the node can be quickly restarted.
+
+**Pending**: Node is transitioning between states - either starting up, shutting down, or applying configuration changes.
+
+**Waiting**: Node is queued for available resources in the selected region. This typically occurs during high-demand periods.
+
+**Expired**: Node has reached its maximum runtime limit or encountered a critical error requiring manual intervention.
+
 ## Node Management Dashboard
 
 ### Comprehensive Operations Interface
@@ -199,6 +215,26 @@ The node management dashboard represents the command center for your AI developm
 The interface balances comprehensive functionality with intuitive operation, ensuring both novice and expert users can efficiently manage their development environments.
 
 **Resource Optimization Insight**: The dashboard's utilization metrics help identify underused resources, enabling cost optimization through right-sizing recommendations.
+
+### Node Actions and Operations
+
+The management interface provides comprehensive control over node lifecycle and configuration:
+
+**Launch Notebook**: Direct, one-click access to your Jupyter environment with automatic authentication and session management.
+
+**SSH Access**: Secure shell access with pre-configured SSH keys for command-line development and system administration.
+
+**Stop Node**: Graceful shutdown that preserves all data and configurations while stopping resource billing.
+
+**Restart Node**: Quick restart maintaining all configurations - useful for applying updates or resolving temporary issues.
+
+**Update Image**: Upgrade to newer base image versions while preserving custom configurations and data.
+
+**Update Plan**: Modify resource allocations (CPU, GPU, memory) or change billing models (hourly to committed) without data loss.
+
+**Save Image**: Create custom snapshots of your configured environment for reuse or sharing with team members.
+
+**Delete Node**: Complete removal of node and associated resources - ensure critical data is backed up before deletion.
 
 ---
 
@@ -245,6 +281,84 @@ The advanced notebook interface demonstrates TIR Nodes' sophisticated developmen
 **Visualization and Analysis Tools** include interactive plotting capabilities with plotly and bokeh, automated data profiling tools, and model architecture visualization features. These tools accelerate the iterative process of model development and evaluation.
 
 **Export and Deployment Features** facilitate the transition from development to production, with support for various output formats and integration with deployment pipelines.
+
+---
+
+## Workspace and Storage Management
+
+### Default Workspace Configuration
+
+Every TIR Node includes a **30GB free workspace** that provides immediate storage for development activities without additional cost. This workspace is automatically mounted and accessible from both Jupyter and SSH environments.
+
+The free workspace is ideal for:
+- Code repositories and development files
+- Small datasets and sample data
+- Model checkpoints and experimental results
+- Temporary processing files and logs
+
+### Advanced Storage Architecture
+
+**Persistent Storage Integration**: Beyond the free workspace, TIR Nodes support up to 5TB of persistent storage that maintains data across node restarts, updates, and configuration changes.
+
+**Local NVME Performance**: High-speed local storage provides exceptional performance for data-intensive operations like large model training, dataset preprocessing, and real-time inference serving.
+
+**Network File System Access**: Integration with network storage systems enables sharing of large datasets across multiple nodes and collaboration with team members.
+
+### SSH Configuration and Security
+
+**SSH Key Management**: Secure access relies on SSH key pairs configured during node creation. Keys are managed through the E2E Networks interface and support both RSA and Ed25519 key types.
+
+**Network Security**: All SSH connections use encrypted tunnels with configurable port access and IP filtering options for enhanced security in enterprise environments.
+
+**Multi-user Access**: Team environments support multiple SSH keys, enabling secure collaborative access while maintaining individual user accountability and audit trails.
+
+---
+
+## Pricing and Billing Models
+
+### Flexible Billing Options
+
+**Hourly Billing**: Pay-per-use model ideal for development, experimentation, and variable workloads. Billing starts when nodes are running and stops immediately upon shutdown.
+
+**Committed Plans**: Discounted rates for predictable, long-term usage. Committed plans offer significant cost savings for production workloads and continuous training operations.
+
+### Cost Optimization Strategies
+
+**Resource Right-sizing**: Monitor actual utilization through the dashboard metrics to identify opportunities for cost reduction through appropriate resource allocation.
+
+**Automated Scheduling**: Use startup scripts and external automation to implement intelligent start/stop scheduling based on development patterns and business hours.
+
+**Storage Tier Management**: Optimize costs by using the free 30GB workspace for active development and persistent storage for long-term data retention.
+
+---
+
+## Advanced Node Features
+
+### Container-Native Development
+
+TIR Nodes provide **container-native environments** that combine the flexibility of containerization with the performance of dedicated hardware. This architecture enables:
+
+**Rapid Environment Switching**: Quick transitions between different development environments and framework versions without affecting underlying data.
+
+**Reproducible Deployments**: Container-based environments ensure consistent behavior across development, testing, and production environments.
+
+**Custom Image Creation**: Save and share customized environments as container images, enabling team standardization and rapid onboarding.
+
+### Collaborative Development Features
+
+**Shared Workspaces**: Multiple team members can access the same node environment, enabling real-time collaboration on AI projects.
+
+**Version Control Integration**: Built-in Git support with automated synchronization capabilities for team-based development workflows.
+
+**Resource Sharing**: Efficient sharing of expensive GPU resources across team members while maintaining individual development environments.
+
+### Advanced Filtering and Search
+
+**Multi-criteria Filtering**: Advanced search capabilities enable precise node selection based on status, resource utilization, cost parameters, and custom tags.
+
+**Resource Optimization Views**: Specialized dashboard views highlight underutilized resources and provide optimization recommendations.
+
+**Team Management**: Organization-level views provide managers with visibility into team resource usage and cost allocation.
 
 ---
 
