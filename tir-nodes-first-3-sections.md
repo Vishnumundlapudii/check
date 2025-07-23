@@ -13,16 +13,22 @@ TIR Nodes are fully collaborative environments that make AI development possible
 
 ## Getting Started with Nodes on TIR
 
-Creating and accessing TIR Nodes follows a straightforward process designed for both individual developers and enterprise teams:
+Creating and accessing TIR Nodes follows a straightforward process designed for both individual developers and enterprise teams. The process begins with accessing the node creation interface through the TIR dashboard.
+
+![Create Node Interface](https://docs.e2enetworks.com/assets/images/click_create_node-5cdfde38a5974bab42107967b1db8214.png)
+
+The TIR dashboard provides a clean, intuitive interface with the "Create Node" button prominently displayed for immediate access. This screenshot shows the main navigation area where users can initiate the node creation process. The interface design ensures that creating new development environments is always just one click away.
+
+**Complete Workflow Process**:
 
 1. **Account Access**: Log into your E2E Networks account and navigate to the TIR platform section
 2. **Project Setup**: Create or select an existing project within your workspace environment  
-3. **Node Access**: Navigate to the Nodes section from the left navigation panel
+3. **Node Initiation**: Click the "Create Node" button shown in the interface above
 4. **Configuration**: Configure your node specifications including image type, hardware resources, and storage requirements
 5. **Review and Deploy**: Review configuration summary and deploy your node
 6. **Access Environment**: Access your running node through Jupyter interface or SSH connection
 
-This comprehensive workflow typically takes 2-5 minutes from initiation to fully operational development environment, depending on resource availability and configuration complexity.
+This comprehensive workflow typically takes 2-5 minutes from initiation to fully operational development environment, depending on resource availability and configuration complexity. The "Create Node" button serves as the entry point for this entire process.
 
 ---
 
