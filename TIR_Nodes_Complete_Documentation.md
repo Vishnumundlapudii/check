@@ -6,7 +6,8 @@
 
 TIR Nodes are collaborative AI development environments designed to streamline the development, testing, and deployment of artificial intelligence (AI) and machine learning (ML) models. As a core component of the E2E Networks TIR platform, TIR Nodes provide a comprehensive set of tools and features that enable developers, data scientists, and AI researchers to work efficiently and effectively.
 
-![TIR Nodes Dashboard Overview](screenshot-dashboard.png)
+![TIR Nodes Dashboard Overview](images/manage_nodes.png)
+*Figure 1: TIR Nodes dashboard showing node management interface with status indicators, resource allocation, and available actions.*
 
 ### Key Features and Benefits
 
@@ -49,7 +50,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Troubleshooting Tip:** If you encounter issues logging in, ensure that your username and password are correct. You can reset your password by clicking the **Forgot Password** link below the login form.
 
-![Login Page Screenshot](login-page-screenshot.png)
+![Login Page](images/login_placeholder.png)
+*Figure 2: E2E Networks login page - Enter your myaccount credentials to access the TIR platform.*
 
 ### Step 2: Create a Project in Private Workspace
 
@@ -60,7 +62,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Helpful Tip:** Choose a descriptive project name to easily identify your project in the dashboard.
 
-![Create Project Dialog Screenshot](create-project-dialog-screenshot.png)
+![Create Project Dialog](images/project_creation_placeholder.png)
+*Figure 3: Create Project dialog - Set up your private workspace with a descriptive project name.*
 
 ### Step 3: Navigate to "Nodes" Section
 
@@ -69,7 +72,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **UI Element Description:** The left sidebar is divided into sections, with the **Nodes** tab located below the **Project** tab. The **Create Node** button is displayed in the top-right corner of the **Nodes** page.
 
-![Nodes Page Screenshot](nodes-page-screenshot.png)
+![Nodes Page](images/create_node_button.png)
+*Figure 4: Nodes section in left sidebar - Click the "Create Node" button to start the node creation process.*
 
 ### Step 4: Select Node Image Type
 
@@ -78,7 +82,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Helpful Tip:** Select a node image type that matches your project requirements.
 
-![Create Node Dialog Screenshot](create-node-dialog-screenshot.png)
+![Node Image Selection](images/node_image_selection.png)
+*Figure 5: Node image selection interface showing different available image types for your development environment.*
 
 ### Step 5: Choose CPU/GPU Plan
 
@@ -88,7 +93,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Plan Selection Guidance:** The **Free Tier** plan is suitable for small projects and development environments. For larger projects, consider the **Basic** or **Advanced** plans.
 
-![Plan Selection Screenshot](plan-selection-screenshot.png)
+![CPU/GPU Plan Selection](images/node_resources.png)
+*Figure 6: Resource plan selection showing CPU and GPU options with pricing tiers and specifications.*
 
 ### Step 6: Configure Optional Settings
 
@@ -98,7 +104,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Helpful Tip:** Ensure that your SSH key pair is correctly configured to access your node.
 
-![Node Configuration Screenshot](node-configuration-screenshot.png)
+![Node Configuration](images/node_storage.png)
+*Figure 7: Node configuration panel for setting SSH access, disk size, and other optional parameters.*
 
 ### Step 7: Launch the Node
 
@@ -107,7 +114,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 **Troubleshooting Tip:** If the node launch fails, check the node configuration and ensure that all required settings are correctly configured.
 
-![Node Launch Screenshot](node-launch-screenshot.png)
+![Node Summary and Launch](images/node_summary.png)
+*Figure 8: Final node configuration summary before launching your TIR node environment.*
 
 ---
 
@@ -117,7 +125,8 @@ TIR Nodes are ideal for a variety of use cases, including:
 
 Our platform offers four primary node image types, each designed to cater to specific use cases and workflows. This documentation provides a comprehensive overview of each image type, including their purpose, technical specifications, pre-installed software, and ideal use cases.
 
-![Node Image Selection Interface](node-images-overview-screenshot.png)
+![Node Image Types Overview](images/node_image_selection.png)
+*Figure 9: Node image type selection showing the four main categories: Base OS, Jupyter, ComfyUI, and FramePack.*
 
 ### 1. Base OS Image
 
@@ -138,7 +147,8 @@ The Base OS Image provides a clean Ubuntu/Linux environment, ideal for custom se
   + Basic system utilities
 * Customization Options: Users can install any software package or library, providing complete control over the environment.
 
-![Base OS Image Configuration](base-os-image-screenshot.png)
+![Base OS Image](images/base_os_selection.png)
+*Figure 10: Base OS image selection providing a clean Ubuntu/Linux environment for custom configurations.*
 
 #### Comparison
 
@@ -164,7 +174,8 @@ The Jupyter Image is a pre-configured Jupyter notebook environment, designed for
   + Support for various kernels (e.g., Python, R, Julia)
 * Customization Options: Users can install additional libraries and kernels, and configure Jupyter Notebook settings.
 
-![Jupyter Image Interface](jupyter-image-screenshot.png)
+![Jupyter Environment](images/jupyter_placeholder.png)
+*Figure 11: Jupyter notebook environment pre-configured with data science libraries and visualization tools.*
 
 #### Comparison
 
@@ -189,7 +200,8 @@ The ComfyUI Image is specifically designed for Stable Diffusion and AI art gener
   + Support for various models and frameworks (e.g., PyTorch, TensorFlow)
 * Customization Options: Users can install additional models and frameworks, and configure ComfyUI settings.
 
-![ComfyUI Interface](comfyui-image-screenshot.png)
+![ComfyUI Environment](images/comfyui_placeholder.png)
+*Figure 12: ComfyUI interface specialized for Stable Diffusion and AI art generation workflows.*
 
 #### Comparison
 
@@ -214,7 +226,8 @@ The FramePack Image is pre-configured with popular machine learning frameworks, 
   + Support for various frameworks and libraries (e.g., Keras, OpenCV)
 * Customization Options: Users can install additional frameworks and libraries, and configure FramePack settings.
 
-![FramePack Image Configuration](framepack-image-screenshot.png)
+![FramePack Environment](images/framepack_placeholder.png)
+*Figure 13: FramePack image with pre-installed ML frameworks including TensorFlow and PyTorch.*
 
 #### Comparison
 
@@ -236,7 +249,8 @@ When selecting a node image type, consider the following factors:
 
 When creating nodes, several configuration options are available to customize the node to suit your specific needs. This document provides detailed explanations of each configuration option, including default values, recommendations, and impact on pricing.
 
-![Node Configuration Panel](node-options-screenshot.png)
+![Node Configuration Options](images/node_details.png)
+*Figure 14: Detailed node configuration panel showing SSH, storage, networking, and security options.*
 
 ### SSH Enablement for Command-Line Access
 
@@ -344,7 +358,8 @@ This configuration enables SSH access, sets the disk size to 100 GB, enables loc
 
 This document provides a comprehensive guide to node status types, their meanings, and the transitions between them. It also offers troubleshooting tips, monitoring and debugging advice, and explains the actions available in each state.
 
-![Node Status Dashboard](node-status-screenshot.png)
+![Node Status Overview](images/manage_nodes.png)
+*Figure 15: Node status dashboard displaying different node states including Waiting, Running, Stopped, Pending, and Expired.*
 
 ### Node Status Types
 
