@@ -134,67 +134,67 @@ TIR supports various pre-built container images optimized for different workflow
 
 To create a Node, click on **Create Node** at the right corner of the page.
 
-![Create Node Button](images/image_5cdfde38a5.png)
+![Create Node Button](images/image_5166ffebde.png)
 *Click "Create Node" to begin the process*
 
 ### Step 2: Select Node Image
 
 Choose your Node image from **TIR PRE-BUILT**, **BASE OS**, or **CONTAINER REGISTRY**. You can also search for specific images.
 
-![Node Image Selection](images/image_6fe32f7a77.png)
+![Node Image Selection](images/image_40b2620033.png)
 *Select from TIR Pre-built images with various frameworks*
 
 #### Base OS Selection
 The Base OS node image does not come with JupyterLab pre-installed.
 
-![Base OS Node](images/image_7822960dbe.png)
+![Base OS Node](images/image_72b7f0cb9a.png)
 *Base OS selection for custom environments*
 
 #### Container Registry
 When using Container Registry, specify whether the image includes JupyterLab.
 
-![Container Registry Node](images/image_7187dc5671.png)
+![Container Registry Node](images/image_5f3b296597.png)
 *Container Registry selection with JupyterLab specification*
 
 ### Step 3: Resource Selection
 
 Choose your plan based on CPU or GPU requirements.
 
-![Node Resource Selection](images/image_2d7398716d.png)
+![Node Resource Selection](images/image_f31904b391.png)
 *Select CPU or GPU resources based on your needs*
 
 #### Resource Filtering
 Filter CPU and GPU resources for more tailored selection.
 
-![CPU Filter](images/image_aa71d9fe29.png)
+![CPU Filter](images/image_af446f3144.png)
 *Filter resources by specific requirements*
 
 ### Step 4: Storage Configuration
 
 Add required datasets to your node during creation.
 
-![Node Storage](images/image_078d77740c.png)
+![Node Storage](images/image_e7cbd65dab.png)
 *Configure storage and add datasets*
 
 ### Step 5: Node Details
 
 Provide essential details before the node is created.
 
-![Node Details Form](images/image_d505d96b46.png)
+![Node Details Form](images/image_97aec2264e.png)
 *Enter node configuration details*
 
 ### Step 6: Review Summary
 
 Review all configuration details before creation.
 
-![Node Summary](images/image_1797d59a18.png)
+![Node Summary](images/image_9a1303c8f9.png)
 *Final summary before node creation*
 
 ### Step 7: Node Management
 
 After creation, access your nodes from the management dashboard.
 
-![Manage Nodes](images/image_01f7278114.png)
+![Manage Nodes](images/image_9d6607cac6.png)
 *Manage all your nodes from the dashboard*
 
 ---
@@ -205,14 +205,14 @@ After creation, access your nodes from the management dashboard.
 
 View complete node details and plan information under the Overview tab.
 
-![Node Overview](images/image_ea56bda830.png)
+![Node Overview](images/image_015ea900f2.png)
 *Complete node overview with details and plan information*
 
 ### 📅 Node Events
 
 Track all node events and activities.
 
-![Node Events](images/image_29d16446a0.png)
+![Node Events](images/image_020d5d93d4.png)
 *Monitor node events and status changes*
 
 ### 📈 Monitoring
@@ -220,13 +220,13 @@ Track all node events and activities.
 #### Real-time Metrics
 Monitor CPU utilization, memory usage, and custom intervals.
 
-![Metrics Graph](images/image_d51412332b.png)
+![Metrics Graph](images/image_0b234ce27b.png)
 *Real-time CPU and memory utilization graphs*
 
 #### Activity Tracking
 View one-month activity breakdown by days and hours.
 
-![Monthly Activity](images/image_74994e86a7.png)
+![Monthly Activity](images/image_0f3e4b6858.png)
 *Detailed activity tracking over time*
 
 ### 💾 Storage Management
@@ -234,27 +234,27 @@ View one-month activity breakdown by days and hours.
 #### Disk Size Management
 View and modify disk size as needed.
 
-![Disk Management](images/image_1bfc800aa0.png)
+![Disk Management](images/image_10214282b7.png)
 *Current disk usage and management options*
 
 #### Update Disk Size
 Change disk size and apply updates.
 
-![Update Disk Size](images/image_26dca5fb26.png)
+![Update Disk Size](images/image_1206067f53.png)
 *Update disk size interface*
 
 ### 📁 Dataset Management
 
 Manage mounted and unmounted datasets.
 
-![Associated Datasets](images/image_f5da9d5fbf.png)
+![Associated Datasets](images/image_1eb7a2eb59.png)
 *View and manage associated datasets*
 
 ### 🗂️ File System
 
 View associated file systems.
 
-![Associated File System](images/image_e4d692e08f.png)
+![Associated File System](images/image_1fc4809368.png)
 *File system associations and management*
 
 ### 🔐 Network & Security
