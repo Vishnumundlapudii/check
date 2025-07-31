@@ -108,6 +108,7 @@ Select from the following options:
 
 ![Choose Disk Button](images/4.Storage_1.png)
 
+
 #### 7. Configure the Notebook
 Choose one of:
 - **New Notebook**: Start from scratch
@@ -121,7 +122,7 @@ Choose one of:
 ![Create Node Button](images/5.ssh_1.png)
 
 #### 9. Summary Preview
-- You can edit any section in summary preview
+- You can edit any section of the summary preview.
 - Click **LAUNCH**. Your node will be provisioned.
 
 ![Create Node Button](images/6.Summary_1.png)
@@ -132,6 +133,8 @@ Choose one of:
 Once the node is ready, its status will be **Running**. You can access it via:
 - **JupyterLab**: From the dashboard's **Access** button
 - **SSH**: If you enabled SSH during setup
+
+![Create Node Button](images/7.Node_created.png)
 
 ---
 
