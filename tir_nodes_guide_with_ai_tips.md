@@ -112,7 +112,7 @@ Select from the following options:
 #### 7. Configure the Notebook
 Choose one of:
 - **New Notebook**: Start from scratch
-- **Import Notebook**: Restore from previous sessions
+- **Import Notebook**: Restore from previous sessions((Link to access the guide))
 
 
 #### 8. Enable SSH (Optional)
