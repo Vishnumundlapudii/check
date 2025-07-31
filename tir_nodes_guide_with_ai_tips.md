@@ -83,46 +83,48 @@ Make sure you have the following before creating a node:
 
 #### 3. Open the Nodes Tab
 - Click the **Nodes** tab in the top navigation.
-- Then click **+ Create Node**.
+- Then click **+ LAUNCH NODE**.
 
 ![Create Node Button](images/1.Create_node.png)
 
 #### 4. Choose an Image
 Select from the following options:
 - **Prebuilt**: Environments like PyTorch, ComfyUI, etc.
-- **Base OS**: Ubuntu or other bare OS options.
-- **Container Registry**: Use a custom container image.
+- **Base OS**: Ubuntu or other bare OS options.(Link to access the guide)
+- **Container Registry**: Use a custom container image.(Link to access the guide)
 
-![Create Node Button](images/2.choose_image.png)
+![Choose Image Button](images/2.choose_image.png)
 
 #### 5. Select a Compute Plan
 - **CPU**: For general development
 - **GPU**: For ML training, inference, or compute-heavy tasks  
 > 💡 **Tip**: Some GPU plans may require approval — you’ll be notified if that’s the case.
 
-![Create Node Button](images/3.CPU:GPU.png)
+![Choose GPU Button](images/3.CPU:GPU.png)
 
 #### 6. Set Disk Size
 - Default is **30 GB**. You can go up to **5 TB**.
 - NVMe-backed disks provide high-speed performance.
 
-![Create Node Button](images/4.Storage.png)
+![Choose Disk Button](images/4.Storage_1.png)
 
 #### 7. Configure the Notebook
 Choose one of:
 - **New Notebook**: Start from scratch
 - **Import Notebook**: Restore from previous sessions
 
+
 #### 8. Enable SSH (Optional)
 - Toggle SSH access if needed.
-- Ensure your public key is added in MyAccount.
+- Ensure your public key is added in MyAccount.tir
 
-![Create Node Button](images/5.ssh.png)
+![Create Node Button](images/5.ssh_1.png)
 
-#### 9. Create the Node
-- Click **Create**. Your node will be provisioned.
+#### 9. Summary Preview
+- You can edit any section in summary preview
+- Click **LAUNCH**. Your node will be provisioned.
 
-![Create Node Button](images/6.summary.png)
+![Create Node Button](images/6.Summary_1.png)
 ---
 
 ### After Creation
